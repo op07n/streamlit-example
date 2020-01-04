@@ -1,1 +1,1 @@
-web: sh setup.sh && PYTHONPATH=$PYTHONPATH:app/ streamlit run app/TSDSStreamlitExample.py --server.port $PORT
+web: PYTHONPATH=$PYTHONPATH:app/ streamlit run app/TSDSStreamlitExample.py --server.enableCORS false --browser.gatherUsageStats false --server.headless true --server.port $PORT
